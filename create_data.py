@@ -5,9 +5,7 @@ import argparse
 
 
 def create_large_binary_file(filename, min_size_gb=2):
-    # Размер файла
     file_size = min_size_gb * 8 * 1024 ** 3
-    # Количество чисел
     num_ints = file_size // 32
 
     print(f"Создание файла {filename} размером {min_size_gb} ГБ...")
